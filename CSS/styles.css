@@ -1,0 +1,57 @@
+/* Base Styles */
+
+body {
+    display: grid;
+    max-width: 1000px;
+    background-color: #f0f0f0;
+}
+
+
+header {
+    width: 100%;
+    display: inline-block;
+    background-color: #f0f0f0;
+}
+
+ul{
+    display: inline-flex;
+    float: right;
+    width: 50%;
+    list-style: none;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #C5B358;
+}
+
+
+
+/* Class Selectors */
+
+.problem{
+    border: 5px red;
+
+}
+
+.main-nav{
+    display: flex;
+        
+}
+
+.main-nav ul{
+    float: center;
+    
+
+
+}
+
+.main_nav li{
+    display: flex;
+    width: 75%;
+    float: right;
+
+}
