@@ -1,34 +1,60 @@
 /* Base Styles */
 
-body {
-    display: grid;
-    max-width: 1000px;
-    background-color: #f0f0f0;
-}
-
-
 header {
     width: 100%;
     display: inline-block;
-    background-color: #f0f0f0;
+    background-color: #002366;
+    padding-bottom: 1em;
+    
+}
+
+header img {
+    display: flex;
+    width: 55%;
+    
+
+}
+html body {
+    height: 100%;
+    margin: 0;
+}
+
+footer{
+    display: inline-block;
+    background-color: lightgrey;
+    width: 100%;
+
+}
+
+aside {
+    background-color: black;
+
+}
+nav{
+      
+    float: right;
+    
 }
 
 ul{
     display: inline-flex;
-    float: right;
-    width: 50%;
+    width: auto;
+    padding-left: 15px;    
     list-style: none;
 }
 
 a {
-    color: black;
+    color: #d4af37;
 }
 
 a:hover {
-    color: #C5B358;
+    color: #ffffff;
 }
 
+p {
+    text-align: justify;
 
+}
 
 /* Class Selectors */
 
@@ -38,20 +64,17 @@ a:hover {
 }
 
 .main-nav{
-    display: flex;
+    
         
 }
-
-.main-nav ul{
-    float: center;
+.footer-nav {
     
-
 
 }
 
+
 .main_nav li{
-    display: flex;
-    width: 75%;
+       width: 75%;
     float: right;
 
 }
