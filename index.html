@@ -8,57 +8,97 @@
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/grid.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/styles.css'>
     <link rel='scripts' type='javascript' media='screen' href='js/scripts.js'>   
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
     <body>
         <header>
-        <nav role="navigation" class= "main_nav">
-            <img src="images/Header.png" alt="Dependable Dumpsters">
-                <ul>
-                    <li><a href="https://dependable-dumpsters.com/">Home</a></li>
-                    <li><a href="https://dependable-dumpsters.com/faq">How Do I/ How Much is a?...</a></li>
-                    <li><a href="https://dependable-dumpsters.com/faq">Contact</a></li>
-                    <li><a href="https://dependable-dumpsters.com/faq">Service Area</a></li>
-                </ul>
+           <div class="banner_img"> 
+               <img src="images/header.png" alt="Dependable Dumpsters">
+            </div>
+            <nav role="navigation" class= "header_nav">          
+               <div class="main_nav"> 
+                   <ul>
+                    <a href="https://dependable-dumpsters.com/">Home</a>
+                    <a href="https://dependable-dumpsters.com/faq">How Do I?...</a>
+                    <a href="https://dependable-dumpsters.com/service-area">Service Area</a>
+                    <a href="https://dependable-dumpsters.com/contact">Contact</a>                   
+                    </ul>   
+                    <a href="javascript:void(0);" class="icon" onclick="hamburger_menu()">
+                        <i class="fa fa-bars"></i>
+                      </a>
+                </div>
 
             </nav>
         </header>
-        <main>
-            <h2>The Overview</h2>
-            <section class="section-1">
-               
-                <img src="https://picsum.photos/id/237/200/300" alt="Before Delivery">
-                <img src="https://picsum.photos/id/237/200/300" alt="Before Delivery">
-                <img src="https://picsum.photos/id/237/200/300" alt="Before Delivery">
-                <img src="https://picsum.photos/id/237/200/300" alt="Before Delivery">
+        <h1>How Do I Rent a Dumspter?</h1>
+        <main>            
+            <section>     
+                <h2>Overview</h2>
+                <p>Isn't that fantastic that you can make whole mountains in minutes? You got your heavy coat out yet? It's getting colder. 
+                    How do you make a round circle with a square knife? That's your challenge for the day. If I paint something, I don't want 
+                    to have to explain what it is. Maybe there was an old trapper that lived out here and maybe one day he went to check his 
+                    beaver traps, and maybe he fell into the river and drowned. Don't kill all your dark areas - you need them to show the light.
+                <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>                      
             </section>
-
-             <h2>The Explination</h2>   
-            <section class="section-2"> 
-                <img src="https://picsum.photos/200" alt="Video Explanation">
-                <img src="https://picsum.photos/200" alt="Static Mountains">
-                <img src="https://picsum.photos/200" alt="Static Mountains">
-                <img src="https://picsum.photos/200" alt="Static Mountains">
+           
+            <section>  
+                <h2>Video Explanation</h2>
+                <p>Don't be bashful drop me a line. We can always carry this a step further. There's really no end to this. I really recommend you use 
+                    odorless thinner or your spouse is gonna run you right out into the yard and you'll be working by yourself. You have to make these 
+                    big decisions. Now, we're going to fluff this cloud. For the lack of a better word I call them hangy downs.
+                <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>
             </section>
-            <h2>The Down & Dirty Details</h2>    
-            <section class="section-3">
-                <img src="https://picsum.photos/200/300?grayscale" alt="Dull Grey Truth">
-                <img src="https://picsum.photos/200/300?grayscale" alt="Dull Grey Truth">
-                <img src="https://picsum.photos/200/300?grayscale" alt="Dull Grey Truth">
-                <img src="https://picsum.photos/200/300?grayscale" alt="Dull Grey Truth">
-            </section>
+            <aside>  
+                
+                <h2>The Dirty Details</h1>
+                <p>I'm gonna add just a tiny little amount of Prussian Blue. And I will hypnotize that just a little bit. As trees get older they lose 
+                    their chlorophyll. The only prerequisite is that it makes you happy. If it makes you happy then it's good.
+                <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>  
+                <p>Let all these things just sort of happen. Just a little indication. You need to have a very firm paint to do this. Maybe we got a 
+                    few little happy bushes here, just covered with snow. If these lines aren't straight, your water's going to run right out of your 
+                    painting and get your floor wet.
+                    <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>                               
+            </aside>
+            <form>
+                <h2>Sign-Up!</h2>
+                <fieldset>
+                    <legend>Personal Info:</legend>
+                    <label for="fullname" ">Full name:</label><br>
+                    <input type="text" id="fname" name="fname" value="Full Name"><br>                                  
+                    <label for="email">Enter your email:</label><br>
+                    <input type="email" id="email" name="email" value="Email">
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery Info:</legend>
+                    <label for="deliveryaddress">Street Address:</label><br>
+                    <input type="text" id="deliveryaddress" name="deliveryaddress" value="123 Main St."><br>
+                    <label for="city">City:</label><br>
+                    <input type="text" id="city" name="city" value="City"><br>                
+                    <label for="state">State:</label><br>
+                    <input type="state" id="state" name="state" value="State">
+                </fieldset>
+                
+                
+                
+                <input type="submit" value="Submit">   
+              </form>
             
+            
+        </main> 
+        
+        
 
-        </main>  
       
         <footer>
             <nav role="navigation" class= "footer_nav">
                 <img src="" alt="">
                     <ul>
                         <li><a href="https://dependable-dumpsters.com/">Home</a></li>
-                        <li><a href="https://dependable-dumpsters.com/faq">How Do I/ How Much is a?...</a></li>
-                        <li><a href="https://dependable-dumpsters.com/faq">Contact</a></li>
+                        <li><a href="https://dependable-dumpsters.com/faq">How Do I?...</a></li>
                         <li><a href="https://dependable-dumpsters.com/faq">Service Area</a></li>
+                        <li><a href="https://dependable-dumpsters.com/faq">Contact</a></li>                        
                     </ul>
     
                 </nav> 

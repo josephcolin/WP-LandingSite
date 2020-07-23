@@ -1,80 +1,150 @@
 /* Base Styles */
 
+body {
+  font-family: Times, Roboto, Garamond;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+  
+  
+
+
 header {
-    width: 100%;
+    /* display: flex; */
+    background-color: royalblue;
+
+}
+
+main {
+
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 5px;
+    background-color: #f8f8f8;
+    /* box-sizing: border-box; */
+}
+
+section {
     display: inline-block;
-    background-color: #002366;
-    padding-bottom: 1em;
-    
+    border: 1px solid gray;    
+    padding: 12px;
+
+}
+aside {
+    border: 1px solid gray;    
+    padding: 8px;
+
 }
 
 header img {
-    display: flex;
-    width: 55%;
+    max-height: 14em;
     
+}
+
+nav{
+    display: inline-flex;
+    margin: auto;
 
 }
-html body {
-    height: 100%;
+
+ul {
+    list-style-type: none;
     margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+    
+li {
+    /* display: inline; */
+    float: left;
+}
+
+li a {
+    /* display: block; */
+    padding: 12px;
+    color: white;
+    background-color: inherit;
+    text-align: center;
+  }
+
+  h1 {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-size: 2.5em;
+  }
+
+  h1:hover {
+    color: #d4af37;
+
+  }
+
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+  }
+  
+  
+  p {
+    text-indent: 50px;
+    text-align: justify;
+    letter-spacing: 3px;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    color: #008CBA;
+  }
+
+  /* Change Link Color on Hover */
+a:hover {
+    color: #d4af37;
+
+}
+
 
 footer{
-    display: inline-block;
-    background-color: lightgrey;
-    width: 100%;
+  margin-top: auto;
+  /* position: fixed;
+  width: 100%;
+  bottom: 0; */
+  background-color: lightgrey;
+  width: 100%;
+  text-align: center;
+  
+}
+footer a{
+    color: black;
+   
+}
+
+br {
+padding-bottom: 50px;
+padding-left: 50px;
 
 }
 
-aside {
-    background-color: black;
+/* Class Styles */
 
-}
-nav{
-      
-    float: right;
-    
-}
 
-ul{
-    display: inline-flex;
-    width: auto;
-    padding-left: 15px;    
-    list-style: none;
-}
-
-a {
-    color: #d4af37;
-}
-
-a:hover {
-    color: #ffffff;
-}
-
-p {
-    text-align: justify;
+.header_nav{
+  display: inline-flex;
+  
 
 }
 
-/* Class Selectors */
-
-.problem{
-    border: 5px red;
-
-}
-
-.main-nav{
-    
-        
-}
-.footer-nav {
-    
+.banner_img {
+display: inline-flex;
+width: 50%;
 
 }
 
+.header_nav{
+margin-left: 7em;
 
-.main_nav li{
-       width: 75%;
-    float: right;
 
 }
