@@ -7,144 +7,202 @@ body {
   min-height: 100vh;
 }
   
-  
-
 
 header {
-    /* display: flex; */
-    background-color: royalblue;
+  background-color: royalblue;
 
+}
+
+header h1 {
+margin-bottom: 0;
 }
 
 main {
 
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 5px;
-    background-color: #f8f8f8;
-    /* box-sizing: border-box; */
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 5px;
+  background-color: #f8f8f8;    
 }
 
 section {
-    display: inline-block;
-    border: 1px solid gray;    
-    padding: 12px;
+  display: inline-block;
+  border: 1px solid gray;    
+  padding: 12px;
 
 }
 aside {
-    border: 1px solid gray;    
-    padding: 8px;
+  border: 1px solid gray;    
+  padding: 8px;
 
 }
 
 header img {
-    max-height: 14em;
+  max-height: 14em;
     
 }
 
 nav{
-    display: inline-flex;
-    margin: auto;
+  width: 45%;
+  display: inline-flex;
+  margin: auto;
 
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: right;
 }
     
 li {
-    /* display: inline; */
-    float: left;
-}
+  display: inline-block;
+  }
 
 li a {
-    /* display: block; */
-    padding: 12px;
-    color: white;
+  display: block;
+  padding: 12px;
+  color: white;
+  background-color: inherit;
+  text-align: center;
+  font-size: 1.5rem;
+  }
+
+  li a:hover {
     background-color: inherit;
     text-align: center;
-  }
+    }
 
-  h1 {
-    display: inline-block;
-    text-transform: uppercase;
-    text-align: center;
-    color: black;
-    font-size: 2.5em;
-  }
+h1 {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  font-size: 3em;
+}
 
-  h1:hover {
-    color: #d4af37;
 
-  }
+header h1:hover {
+  color: none;
+}
 
-  h2 {
-    text-align: center;
-    text-transform: uppercase;
-    color: #4CAF50;
-  }
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #d4af37;
+}
   
   
-  p {
-    text-indent: 50px;
-    text-align: justify;
-    letter-spacing: 3px;
-  }
+p {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
   
-  a {
-    display: block;
-    text-decoration: none;
-    color: #008CBA;
-  }
+a {
+  text-decoration: none;
+ 
+}
 
   /* Change Link Color on Hover */
 a:hover {
-    color: #d4af37;
+  color: #d4af37;
 
+}
+
+br {
+  padding-bottom: 50px;
+  padding-left: 50px;
+
+}
+
+input[type=submit] {
+  background-color: royalblue;
+  border: none;
+  border-radius: 50px;
+  color: #d4af37;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  
+  color: black;
+  
 }
 
 
 footer{
   margin-top: auto;
-  /* position: fixed;
-  width: 100%;
-  bottom: 0; */
+  padding-top: 1.5rem;
   background-color: lightgrey;
   width: 100%;
   text-align: center;
-  
+  font-size: 1.5em;
+
 }
+
 footer a{
-    color: black;
+  color: black;
+
    
 }
 
-br {
-padding-bottom: 50px;
-padding-left: 50px;
 
-}
+
+
 
 /* Class Styles */
 
 
 .header_nav{
   display: inline-flex;
-  
+  float: right;
+}
+.main_nav {
+text-align: right;
 
 }
 
-.banner_img {
-display: inline-flex;
-width: 50%;
+
+
+.banner {
+  padding-left: 0.75em;
+  display: inline-block;
+  width: 45%;
 
 }
 
 .header_nav{
-margin-left: 7em;
-
-
+  margin-left: 7em;
 }
+
+
+/* Creates Responsive Iframe For Video Scaling */
+.iframe_container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe_container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+ 
+/* 4x3 Aspect Ratio */
+.iframe_container-4x3 {
+  padding-top: 75%;
+}
+
+
+/* Hamburger Test CSS */
+
+
