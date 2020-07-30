@@ -1,4 +1,4 @@
-@media(min-width: 480px){
+@media (min-width: 480px){
 
     main {    
         display: grid;
@@ -9,9 +9,17 @@
         gap: 1em 1.5em;
         
     }
-    nav { 
+    /* nav { 
         display: none;
-    } 
+    }  */
+
+}
+
+@media (max-width: 480px){
+    .hidden {
+        display: none;
+
+    }
 
 }
 
@@ -30,6 +38,11 @@
     .hamburger {
         display: none;
     }
+
+    /* .hidden {
+        display: initial;
+
+    } */
 
 
     
