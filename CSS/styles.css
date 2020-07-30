@@ -17,6 +17,12 @@ header h1 {
 margin-bottom: 0;
 }
 
+nav{
+  /* display: inline-flex; */
+  margin: auto;
+
+}
+
 main {
 
   margin-top: 25px;
@@ -42,12 +48,7 @@ header img {
     
 }
 
-nav{
-  width: 45%;
-  display: inline-flex;
-  margin: auto;
 
-}
 
 ul {
   list-style-type: none;
@@ -83,6 +84,7 @@ h1 {
   font-size: 3em;
 }
 
+h1
 
 header h1:hover {
   color: none;
@@ -112,11 +114,6 @@ a:hover {
 
 }
 
-br {
-  padding-bottom: 50px;
-  padding-left: 50px;
-
-}
 
 input[type=submit] {
   background-color: royalblue;
@@ -151,24 +148,11 @@ footer a{
    
 }
 
-
-
-
-
 /* Class Styles */
 
 
-.header_nav{
-  display: inline-flex;
-  float: right;
-}
-.main_nav {
-text-align: right;
 
-}
-
-
-
+  
 .banner {
   padding-left: 0.75em;
   display: inline-block;
@@ -176,31 +160,24 @@ text-align: right;
 
 }
 
-.header_nav{
-  margin-left: 7em;
+.main_nav {
+display: inline-flex;
+width: 45%;
+text-align: right;
+margin-left: 7em;
+
+}
+
+.footer_nav {
+  display: inline-flex;
+
 }
 
 
-/* Creates Responsive Iframe For Video Scaling */
-.iframe_container {
-  overflow: hidden;
-  padding-top: 56.25%;
-  position: relative;
-}
- 
-.iframe_container iframe {
-   border: 0;
-   height: 100%;
-   left: 0;
-   position: absolute;
-   top: 0;
-   width: 100%;
-}
- 
-/* 4x3 Aspect Ratio */
-.iframe_container-4x3 {
-  padding-top: 75%;
-}
+
+
+
+
 
 
 /* Hamburger Test CSS */

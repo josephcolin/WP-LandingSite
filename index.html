@@ -6,30 +6,28 @@
     <title>Joseph Colin Beatty's First Stab At CoDe"</title>
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/normalize.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/grid.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='CSS/styles.css'>    
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/styles.css'>     
 </head>
     <body>
         <header>
            <div class="banner"> 
-               <!-- <img src="images/header.png" alt="Dependable Dumpsters"> -->
                <h1>Dependable Dumpsters</h1>
                <h2>Rock. Solid. Service.</h2>
             </div>
-            <nav role="navigation" class= "header_nav">          
-               <div class="main_nav"> 
-                   <ul>
-                    <a href="javascript:void(0);" class="icon" onclick="hamburger_menu()">
-                    <i class="fa fa-bars"></i>
+            <div class="main_nav" onclick="toggleMenu()">
+                <h1 class="hamburger">&#9776;</h1>
+            <!-- </div> -->
+                <nav role="navigation" class="nav_links">      
+                    <ul>                    
                     <li><a href="https://dependable-dumpsters.com/">Home</a></li>
                     <li><a href="https://dependable-dumpsters.com/faq">How Do I?...</a></li>
                     <li><a href="https://dependable-dumpsters.com/service-area">Service Area</a></li>
                     <li><a href="https://dependable-dumpsters.com/contact">Contact</a></li>   
-                    </ul>  
-                </div>         
+                    </ul>
+                </nav>  
+            </div>      
 
-            </nav>
+            
         </header>
         <h1>How Do I Rent a Dumpster?</h1>
         <main>            
@@ -44,9 +42,11 @@
            
             <section>  
                 <h2>Video Explanation</h2>
-                <div class="iframe_container">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/HmkB_hzSHyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
+                <p>Isn't that fantastic that you can make whole mountains in minutes? You got your heavy coat out yet? It's getting colder. 
+                    How do you make a round circle with a square knife? That's your challenge for the day. If I paint something, I don't want 
+                    to have to explain what it is. Maybe there was an old trapper that lived out here and maybe one day he went to check his 
+                    beaver traps, and maybe he fell into the river and drowned. Don't kill all your dark areas - you need them to show the light.
+                <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a>link.</p>                      
             </section>
             
             <aside>  
@@ -78,7 +78,7 @@
                     <label for="state">State:</label><br>
                     <input type="text" id="state" name="state" value="State">                    
                 </fieldset>
-                    <input type="submit" value="Submit">   
+                    <input type="submit" value="Order Dumpster">   
             </form>                 
         </main>       
         <footer>
