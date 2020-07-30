@@ -16,7 +16,7 @@
             </div>
             <div class="main_nav" >
                 <h1 class="hamburger" onclick="toggleMenu()">&#9776;</h1>
-                <nav role="navigation" class="nav_links hidden">      
+                <nav class="nav_links hidden">      
                     <ul>                    
                     <li><a href="https://dependable-dumpsters.com/">Home</a></li>
                     <li><a href="https://dependable-dumpsters.com/faq">How Do I?...</a></li>
@@ -59,29 +59,29 @@
                     painting and get your floor wet.
                     <a target="_blank" href="tryit.asp?filename=trycss_text">"Try it Yourself"</a> link.</p>                               
             </aside>
-            <form>
+            <form onsubmit="emailValidation ()"> 
                 <h2>Sign-Up!</h2>
                 <fieldset>
                     <legend>Personal Info:</legend>
                     <label for="fname">Full name:</label><br>
-                    <input type="text" id="fname" name="fname" value="Full Name"><br>                                  
+                    <input type="text" id="fname" name="fname" placeholder="Full Name"><br>                                  
                     <label for="email">Enter your email:</label><br>
-                    <input type="email" id="email" name="email" value="Email">
+                    <input type="email" id="email" name="email" placeholder="Email" onkeydown="emailValidation()">
                 </fieldset>
                 <fieldset>
                     <legend>Delivery Info:</legend>
                     <label for="deliveryaddress">Street Address:</label><br>
-                    <input type="text" id="deliveryaddress" name="deliveryaddress" value="123 Main St."><br>
+                    <input type="text" id="deliveryaddress" name="deliveryaddress" placeholder="123 Main St."><br>
                     <label for="city">City:</label><br>
-                    <input type="text" id="city" name="city" value="City"><br>                
+                    <input type="text" id="city" name="city" placeholder="City"><br>                
                     <label for="state">State:</label><br>
-                    <input type="text" id="state" name="state" value="State">                    
+                    <input type="text" id="state" name="state" placeholder="State">                    
                 </fieldset>
-                    <input type="submit" value="Order Dumpster">   
+                    <input type="submit" value="Order Dumpster" >   
             </form>                 
         </main>       
         <footer>
-            <nav role="navigation" class= "footer_nav">                
+            <nav class= "footer_nav">                
                 <ul>
                     <li><a href="https://dependable-dumpsters.com/">Home</a></li>
                     <li><a href="https://dependable-dumpsters.com/faq">How Do I?...</a></li>

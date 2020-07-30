@@ -8,7 +8,27 @@ function toggleMenu() {
     
     
 
-//   function validateEmail(email) {
-//     const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-//     return re.test(String(email).toLowerCase());
-// }
+
+//  Email Validation
+
+function emailValidation () {
+  var form = document.getElementById("form");
+  var email = document.getElementById("email").value;
+  var text = document.getElementById("text");
+  var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+  if (email.match(pattern)) {
+    form.classList.add("valid");
+    form.classList.remove("invalid");
+    text.innerHTML = "Your email is valid.";
+    text.style.color = "#00ff00";
+
+  }else {
+    form.classList.remove("valid");
+    form.classList.add("invalid");
+    text.innerHTML = "Please enter a valid email.";
+    text.style.color = "#ff0000";
+    
+  }
+
+}
